@@ -6,11 +6,17 @@ class Person():
         self.name = name
         self.age = age
 
+    def __str__(self):
+        return 'I am {} and this is my description'.format(self.name)
+    
     def sayHello(self, message):
         return 'Hey, my name is {} and I am {} years old, you said: {}'.format(self.name, self.age, message)
-
+    
+    def __del__(self):
+        print('I am {} and I just wanted to say good bye!'.format(self.name))
 firstPhone = Phone()
 print(type(firstPhone))
 
 firstPerson = Person('Jose', '23')
 print(firstPerson.sayHello('Hi!'))
+print(firstPerson)
