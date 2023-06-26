@@ -56,3 +56,12 @@ footer {
     border-radius: 10px;
     text-align: center;
 }
+
+#firstDiv {
+    margin-top: 800px;
+    background-color: #00ffff;
+    width: 900px;
+    height: 200px;
+    border-radius: 15px;
+    text-align: center;
+}
