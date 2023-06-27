@@ -13,3 +13,4 @@ Python Udemy practice course
 
 [Download the web driver for Chrome](https://chromedriver.chromium.org/downloads)
 
+[Download Chropath](https://chrome.google.com/webstore/detail/chropath/ljngjbnaijcbncmcnjfhigebomdlkcjo?hl=es)
