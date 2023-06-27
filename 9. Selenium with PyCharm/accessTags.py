@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+import env.connection as connection
 import time
 
 controller = webdriver.Chrome()
@@ -12,7 +13,7 @@ password = controller.find_element(By.ID,'form-group--3')
 
 #Send data to the selected elements, it simulates a user typing
 email.send_keys('dahima9413@dotvilla.com')
-password.send_keys('YourPassword')
+password.send_keys(connection.Connection().getPassword())#String with the password
 time.sleep(2)
 submit = controller.find_element(By.LINK_TEXT, 'Iniciar sesión')
 submit.click()
